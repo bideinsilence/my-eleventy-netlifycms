@@ -4,7 +4,8 @@
       <strong>
         <a href="{{ post.url | url }}">{{ post.data.title }}</a>
       </strong>
-      <time datetime="{{ post.data.date }}">- {{ post.data.date }}</time>
+      <time datetime="{{ post.data.date | htmlDateString }}">- {{
+        post.data.date | readableDate }}</time>
       <span>- {{ post.data.description }}</span>
     </li>
   {% endfor %}
