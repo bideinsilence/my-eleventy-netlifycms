@@ -1,10 +1,5 @@
 backend:
   name: git-gateway
-  # Authenitication through netlify identity wasn't working without branch:
-  # main - appears to have something to do with identity registration being open and not
-  # invite only?
-  # 03/01/21 Now trying with branch reverted to master - CMS no longer allowing
-  # login
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "_site/images/uploads"
 public_folder: "/images/uploads"
